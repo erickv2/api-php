@@ -3,7 +3,7 @@
 
 namespace Util;
 
-class RotasUtil
+class RoutesUtil
 {
     /**
      * Retorna as rotas processadas da URL

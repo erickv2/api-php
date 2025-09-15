@@ -5,9 +5,9 @@
 // error_reporting(level: E_ERROR);
 
 define('HOST', 'localhost');
-define('BANCO', 'api');
+define('DB', 'api');
 define('USER', 'erick');
-define('SENHA', '123');
+define('PASSWORD', '123');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('DIR_APP', '\laragon\www\api-php');
