@@ -22,6 +22,14 @@ class UserController extends Controller
 
         echo json_encode(['message' => 'Usuário criado com sucesso!', 'data' => $data]);
     }
+
+    public static function update($id) {
+        echo json_encode(['message' => "Usuário com ID $id atualizado com sucesso!"]);
+    }
+
+    public static function delete($id) {
+        echo json_encode(['message' => "Usuário com ID $id deletado com sucesso!"]);
+    }
 }
 
 
