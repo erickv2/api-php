@@ -1,5 +1,12 @@
 <?php
 
+use Util\RotasUtil;
+use Validator\RequestValidator;
+
 include 'bootstrap.php';
 
-$RequestValidator = new \Validator\RequestValidator();
+try {
+    $RequestValidator = new RequestValidator(RotasUtil::getRotas());
+} catch (Exception $exception) {
+    echo $exception->getMessage();
+}

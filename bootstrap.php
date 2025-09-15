@@ -10,7 +10,7 @@ define('USER', 'erick');
 define('SENHA', '123');
 
 define('DS', DIRECTORY_SEPARATOR);
-define('DIR_APP', '\MAMP\htdocs\api-php');
+define('DIR_APP', '\laragon\www\api-php');
 
 if (file_exists(filename: 'autoload.php')) {
     include 'autoload.php';
