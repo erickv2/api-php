@@ -8,7 +8,7 @@ class RoutesUtil
     /**
      * Retorna as rotas processadas da URL
      */
-    public static function getRotas()
+    public static function getRoutes()
     {
         return self::getUrls();
     }
