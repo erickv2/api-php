@@ -4,7 +4,7 @@ namespace Controllers;
 
 class UserController extends Controller
 {
-    public static function list()
+    public static function show()
     {
         $usuarios = [
             ['id' => 1, 'nome' => 'João'],

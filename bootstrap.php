@@ -9,9 +9,9 @@
 
     // Constantes de conexão com o banco de dados
     define('HOST', 'localhost'); // Host do banco de dados
-    define('BANCO', 'api');      // Nome do banco de dados
-    define('USER', 'erick');     // Usuário do banco de dados
-    define('SENHA', '123');      // Senha do banco de dados
+    define('DB_NAME', 'api');      // Nome do banco de dados
+    define('USERNAME', 'erick');     // Usuário do banco de dados
+    define('PASSWORD', '123');      // Senha do banco de dados
 
     // Constantes de diretórios
     define('DS', DIRECTORY_SEPARATOR);           // Separador de diretório do sistema

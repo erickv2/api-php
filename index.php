@@ -22,7 +22,7 @@ $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
 if ($routes[0] === 'usuarios') {
     if ($method === 'GET') {
-        UserController::list();
+        UserController::show();
         exit;
     }
 
