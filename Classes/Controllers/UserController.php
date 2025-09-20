@@ -2,8 +2,10 @@
 
 namespace Controllers;
 
-class UserController extends Controller
+class UserController
 {
+    
+    // Método para listar usuários
     public static function show()
     {
         $usuarios = [
@@ -16,6 +18,8 @@ class UserController extends Controller
         echo json_encode($usuarios);
     }
 
+    
+    // Método para criar novo usuário
     public static function create() {
 
         $data = json_decode((file_get_contents(('php://input'))), true);
@@ -23,10 +27,12 @@ class UserController extends Controller
         echo json_encode(['message' => 'Usuário criado com sucesso!', 'data' => $data]);
     }
 
+    // Método para atualizar informações do usuário
     public static function update($id) {
         echo json_encode(['message' => "Usuário com ID $id atualizado com sucesso!"]);
     }
 
+    // Método para remover usuário
     public static function delete($id) {
         echo json_encode(['message' => "Usuário com ID $id deletado com sucesso!"]);
     }

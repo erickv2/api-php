@@ -16,10 +16,12 @@ try {
     echo $exception->getMessage();
 }
 
-
+// Define variáveis de rotas e método
 $routes = RoutesUtil::getRoutes();
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
+
+// Rotas para /usuarios
 if ($routes[0] === 'usuarios') {
     if ($method === 'GET') {
         UserController::show();
@@ -41,6 +43,8 @@ if ($routes[0] === 'usuarios') {
         exit;
     }
 
+
+// Configura erro 404
 http_response_code(404);
 echo json_encode(['error' => 'Rota não encontrada']);
 
